@@ -28,11 +28,17 @@ module Library =
         | Some v ->
             v.Length > MAX_LENGTH
             
-    let MaxLength (i: 'A list option) : bool =
-        match i with
-        | None -> false
-        | Some v ->
-            v.Length > MAX_LENGTH
+    
+    // F# has no overloading, so this doesn't work.
+    // I could create a discriminated enum which allows either a string option or list option, but we'll leave it
+    // as-is for the time being 
+    
+    // let MaxLength (i: 'A list option) : bool =
+    //     match i with
+    //     | None -> false
+    //     | Some v ->
+    //         v.Length > MAX_LENGTH
+    
 
     /// <summary>
     /// Validates if a DateTime is in the future
