@@ -18,7 +18,7 @@ if the previous tests return Ok. This could also possibly be implemented using t
 I think I may have missed the mark a bit with the brief as I feel like the problem would have better suited a system leveraging dependency injection, such that you could
 add the name or dob component at runtime then pass literally everything into the same validator function, using the dependency injection system to only run the validators on
 types that exist within the type passed into the validator. That said, a dependency injection system would take a fair bit longer to implement.
-Additionally, I haven't implemented a validator for a different example type such as `Appointment`, `Prescription`, etc. as it would have taken me over 2 hours. 
+Additionally, I haven't implemented a validator for a different example type such as `Appointment`, `Prescription`, etc. as it would have taken me over the allotted 2 hours. 
 
 As a last quick note, I originally intended to use MSTest for testing the solution but adding the packages threw up a strange error about the entry point not being the final
 translation unit in the file. As much as I could probably have fixed it, I decided it was quicker to just write a console application instead.
